@@ -1,0 +1,216 @@
+@font-face { /* Ajout de ma police */  
+  font-family: KristalNowPro;
+  src: url(src/KristallNowPro-Bold_1.otf);
+}
+
+html { /* Appliquer la police sur toute la page */
+  font-family: KristalNowPro;
+}
+
+body {
+  background-image: url('src/paysage.jpg'); /* Image d'arrière plan */
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+h1 {
+  text-align: center;
+  font-size: 50px;
+}
+
+h2 {
+  text-decoration: underline;
+  font-size: 35px;
+}
+
+h3 {
+  text-align: center;
+  font-size: 25px;
+}
+
+p {
+  font-size: 20px;
+}
+
+p.texte_presentation {
+  font-size: 27px;
+}
+
+div.texte_presentation {
+  padding-left: 75px;
+  padding-right: 75px;
+}
+
+div.gallery {
+  width: 92%;
+  display: inline-flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 100px;
+  padding: 75px;
+}
+
+div.image {
+  position: relative;
+  overflow: hidden;
+  border-radius: 15px;
+}
+
+div.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 99.45%;
+  background: rgba(0, 0, 0, 0.9);
+  color: white;
+  opacity: 0;
+  transition: opacity 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+div.description {
+  text-align: center;
+  padding: 10px;
+}
+
+div.image:hover .overlay {
+  opacity: 1;
+}
+
+
+a.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #007BFF; /* Couleur de fond du bouton */
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+a.btn:hover {
+  background-color: #0056b3; /* Couleur de fond du bouton au survol */
+}
+
+/* Style général du formulaire */
+form {
+  margin: 20px auto; /* Centre le formulaire horizontalement */
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.6);
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  text-align: center;
+}
+
+/* Style des libellés (labels) */
+label {
+  display: block; /* Affiche les labels sur des lignes distinctes */
+  font-weight: bold;
+  margin: 10px;
+  font-size: 20px;
+}
+
+/* Style des champs de texte (input) et de la zone de texte (textarea) */
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 97%; /* Remplit la largeur du conteneur */
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Style du bouton de soumission */
+input[type="submit"] {
+  background-color: #007BFF;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+input[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+/* Style des boutons radio */
+div.avis input[type="radio"] {
+  display: none; /* Masque les boutons radio */
+
+}
+
+div.avis label {
+  display: inline-block;
+  padding: 8px 15px;
+  margin-bottom: 20px;
+
+  background-color: #eee;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+/* Style pour les boutons radio cochés*/
+div.avis input[type="radio"]:checked + label {
+  background-color: #007BFF;
+  color: white;
+}
+
+/* Style de la liste déroulante */
+#meilleur_lieu {
+  width: 98%; /* Remplit la largeur du conteneur */
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  text-align: center;
+}
+
+/* Style des options de la liste déroulante */
+#meilleur_lieu option {
+  padding: 10px;
+  background-color: #fff; /* Couleur de fond des options */
+  color: #000; /* Couleur du texte des options */
+}
+
+/* Style pour les options sélectionnées */
+#meilleur_lieu option:checked {
+  background-color: #007BFF; /* Couleur de fond des options sélectionnées */
+  color: white; /* Couleur du texte des options sélectionnées */
+}
+
+/* Style de la liste déroulante */
+#meilleur_evenement {
+  width: 98%; /* Remplit la largeur du conteneur */
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  text-align: center;
+}
+
+/* Style des options de la liste déroulante */
+#meilleur_evenement option {
+  padding: 10px;
+  background-color: #fff; /* Couleur de fond des options */
+  color: #000; /* Couleur du texte des options */
+}
+
+/* Style pour les options sélectionnées */
+#meilleur_evenement option:checked {
+  background-color: #007BFF; /* Couleur de fond des options sélectionnées */
+  color: white; /* Couleur du texte des options sélectionnées */
+}
+
+div.cahier_charges {
+  text-align: center;
+  margin: 20px;
+}
